@@ -24,8 +24,8 @@ namespace Sofas_Services
                  datosconsumibles = _context.consumibles.ToList();
 
             }
-           // IList<IList<Consumibles>> ret = new List<IList<Consumibles>>();
-
+            // IList<IList<Consumibles>> ret = new List<IList<Consumibles>>();
+            int a;
             return datosconsumibles;
         }
     }
