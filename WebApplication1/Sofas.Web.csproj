@@ -32,6 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PrServices\Sofas_Services.csproj" />
     <ProjectReference Include="..\Sofas.Domain\Sofas.Domain.csproj" />
   </ItemGroup>
 <ItemGroup>

@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Sofas.Domain;
+using Sofas_Services;
 
 namespace WebApplication1
 {
@@ -19,11 +20,14 @@ namespace WebApplication1
 
         public IConfiguration Configuration { get; }
 
+       // public IConsumiblesServices Consumibles { get; }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddScoped<IConsumiblesServices, ConsumiblesServices>();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sofas.Domain", "Sofas.Domai
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sofas.Services", "Sofas.Services", "{9F6E9A9C-3D52-4B1E-8561-5F2F134E663A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrServices", "PrServices\PrServices.csproj", "{F7C0C3C5-64FD-48B2-AA96-CF022D319614}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sofas_Services", "PrServices\Sofas_Services.csproj", "{F7C0C3C5-64FD-48B2-AA96-CF022D319614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

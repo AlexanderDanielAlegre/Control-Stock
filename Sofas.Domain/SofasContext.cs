@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Sofas.Domain.Models;
 using System;
 
 namespace Sofas.Domain
@@ -7,7 +8,7 @@ namespace Sofas.Domain
     {
         public SofasContext(DbContextOptions<SofasContext> options): base(options)
         {
-             
+            //Database.OpenConnection();
 
         }
 
@@ -17,12 +18,7 @@ namespace Sofas.Domain
 
         public DbSet<Consumibles_Count> consumibles_Counts { get; set; }
 
-        public class Consumibles
-        {
-            public int id { get; set; }
-            public string Producto { get; set; }
-           // public string MyProperty { get; set; }
-        }
+      
         public class Instrumentos
         {
             public int id { get; set; }
