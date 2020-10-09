@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Sofas.Domain.Migrations
 {
-    public partial class inicialcreate : Migration
+    public partial class first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,7 @@ namespace Sofas.Domain.Migrations
                 {
                     id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Consumibles = table.Column<string>(nullable: true)
+                    Producto = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

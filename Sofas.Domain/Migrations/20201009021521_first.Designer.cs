@@ -9,8 +9,8 @@ using Sofas.Domain;
 namespace Sofas.Domain.Migrations
 {
     [DbContext(typeof(SofasContext))]
-    [Migration("20200917155704_inicialcreate")]
-    partial class inicialcreate
+    [Migration("20201009021521_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,13 +20,13 @@ namespace Sofas.Domain.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Sofas.Domain.SofasContext+Consumibles", b =>
+            modelBuilder.Entity("Sofas.Domain.Models.Consumibles", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Consumibles");
+                    b.Property<string>("Producto");
 
                     b.HasKey("id");
 
