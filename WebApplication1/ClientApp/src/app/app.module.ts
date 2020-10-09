@@ -11,6 +11,8 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 //import { ChatComponent } from './Consumibles/chat.component';
 import { ConsumiblesComponent } from './Consumibles/Consumibles.component';
+import { TodoComponent } from './todo/todo.component';
+import { TodoFormComponent } from './todo-form/todo-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ConsumiblesComponent } from './Consumibles/Consumibles.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    ConsumiblesComponent
+    ConsumiblesComponent,
+    TodoComponent,
+    TodoFormComponent
 
   ],
   imports: [
@@ -35,6 +39,7 @@ import { ConsumiblesComponent } from './Consumibles/Consumibles.component';
     ])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [TodoFormComponent]
 })
 export class AppModule { }
