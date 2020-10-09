@@ -18,13 +18,13 @@ namespace Sofas.Domain.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Sofas.Domain.SofasContext+Consumibles", b =>
+            modelBuilder.Entity("Sofas.Domain.Models.Consumibles", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Consumibles");
+                    b.Property<string>("Producto");
 
                     b.HasKey("id");
 
@@ -55,6 +55,21 @@ namespace Sofas.Domain.Migrations
                     b.HasKey("id");
 
                     b.ToTable("instrumentos");
+                });
+
+            modelBuilder.Entity("Sofas.Domain.SofasContext+ToDo", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("completado");
+
+                    b.Property<string>("descripcion");
+
+                    b.HasKey("id");
+
+                    b.ToTable("toDos");
                 });
 #pragma warning restore 612, 618
         }
