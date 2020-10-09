@@ -18,14 +18,17 @@ namespace Sofas_Services
         public IList<Consumibles> RetornarConsumibles()
         {
             List<Consumibles> datosconsumibles;
+            int a;
+            //int? b;
+            //System.Nullable<decimal> a;
 
             using (_context)
             {
                  datosconsumibles = _context.consumibles.ToList();
+                //datosconsumibles = _context.consumibles.Where(x => x.id == 1).Select(x => x.id).FirstOrDefault();
 
             }
             // IList<IList<Consumibles>> ret = new List<IList<Consumibles>>();
-            int a;
             return datosconsumibles;
         }
     }

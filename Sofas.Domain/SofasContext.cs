@@ -19,29 +19,29 @@ namespace Sofas.Domain
         public DbSet<Consumibles_Count> consumibles_Counts { get; set; }
 
         public DbSet<ToDo> toDos { get; set; }
-        public class Instrumentos
-        {
-            public int id { get; set; }
-            public string Consumibles { get; set; }
-            //public string MyProperty { get; set; }
-        }
-        public class Instrumentos_Count
-        {
-            public int id { get; set; }
-            public string cantidad { get; set; }
-            //public string MyProperty { get; set; }
-        }
-        public class Consumibles_Count
-        {
-            public int id { get; set; }
-            public string cantidad { get; set; }
-            //public string MyProperty { get; set; }
-        }
-        public class ToDo
-        {
-            public int id { get; set; }
-            public string descripcion { get; set; }
-            public bool completado { get; set; }
-        }
+        //public class Instrumentos
+        //{
+        //    public int id { get; set; }
+        //    public string Consumibles { get; set; }
+        //    //public string MyProperty { get; set; }
+        //}
+        //public class Instrumentos_Count
+        //{
+        //    public int id { get; set; }
+        //    public string cantidad { get; set; }
+        //    //public string MyProperty { get; set; }
+        //}
+        //public class Consumibles_Count
+        //{
+        //    public int id { get; set; }
+        //    public string cantidad { get; set; }
+        //    //public string MyProperty { get; set; }
+        //}
+        //public class ToDo
+        //{
+        //    public int id { get; set; }
+        //    public string descripcion { get; set; }
+        //    public bool completado { get; set; }
+        //}
     }
 }
