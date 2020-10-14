@@ -6,19 +6,22 @@ namespace Sofas.Domain
 {
     public class SofasContext : DbContext
     {
-        public SofasContext(DbContextOptions<SofasContext> options): base(options)
+        public SofasContext(DbContextOptions<SofasContext> options) : base(options)
         {
             //Database.OpenConnection();
 
         }
 
-        public DbSet<Consumibles> consumibles{ get; set; }
+        public DbSet<Consumibles> consumibles { get; set; }
 
         public DbSet<Instrumentos> instrumentos { get; set; }
 
         public DbSet<Consumibles_Count> consumibles_Counts { get; set; }
 
         public DbSet<ToDo> toDos { get; set; }
+        public DbSet<Proveedor> proveedores{ get; set; }
+        public DbSet<Personas> personas { get; set; }
+
         //public class Instrumentos
         //{
         //    public int id { get; set; }
