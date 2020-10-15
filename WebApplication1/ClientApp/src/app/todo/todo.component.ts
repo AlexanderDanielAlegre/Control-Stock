@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModel } from '@angular/forms';
+//import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+//import { NgbModal, NgbActiveModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { TodoFormComponent } from '../todo-form/todo-form.component';
 
 @Component({
@@ -15,11 +17,11 @@ export class TodoComponent implements OnInit {
   }
 
   clickAddTodo() {
-    const modal = this.modalService.open(TodoFormComponent)
-    modal.result.then(
-      this.handleModalTodoFormClose.bind(this),
-      this.handleModalTodoFormClose.bind(this)
-    )    
+    //const modal = this.modalService.open(TodoFormComponent)
+    //modal.result.then(
+    //  this.handleModalTodoFormClose.bind(this),
+    //  this.handleModalTodoFormClose.bind(this)
+    //)    
   }
   handleModalTodoFormClose() {
     alert("se ha cerrado el modal");

@@ -8,5 +8,7 @@ namespace Sofas_Services
     public interface IConsumiblesServices
     {
         IList<Consumibles> RetornarConsumibles();
+        void CargaPrueba();
+
     }
 }

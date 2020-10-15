@@ -31,6 +31,13 @@ namespace Sofas_Services
             // IList<IList<Consumibles>> ret = new List<IList<Consumibles>>();
             return datosconsumibles;
         }
+
+        public void CargaPrueba()
+        {
+            Consumibles consumible = new Consumibles();
+            consumible.Producto = "Harina 0000";
+            _context.SaveChanges();
+        }
     }
 
 }

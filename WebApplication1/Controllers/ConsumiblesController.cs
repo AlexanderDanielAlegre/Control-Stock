@@ -22,6 +22,12 @@ namespace WebApplication1.Controllers
             db = context;
             services_consumibles = consumiblesServices;
         }
+
+        public ActionResult Index()
+        {
+            services_consumibles.CargaPrueba();
+            return View();
+         }
         //[HttpGet("[action]")]
         //public IActionResult Index()
         //{
