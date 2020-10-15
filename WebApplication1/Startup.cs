@@ -36,7 +36,7 @@ namespace WebApplication1
                 configuration.RootPath = "ClientApp/dist";
             });
             //\DESKTOP-419KEH1
-            var connection = @"Server=localhost;DataBase=ControlStock; Trusted_Connection=True; ConnectRetryCount=0";
+            var connection = @"Server=localhost;DataBase=SofasChorn; Trusted_Connection=True; ConnectRetryCount=0";
             services.AddDbContext<SofasContext>(options => options.UseSqlServer(connection));
         }
 

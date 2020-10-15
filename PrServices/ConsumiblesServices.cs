@@ -18,9 +18,6 @@ namespace Sofas_Services
         public IList<Consumibles> RetornarConsumibles()
         {
             List<Consumibles> datosconsumibles;
-            int a;
-            //int? b;
-            //System.Nullable<decimal> a;
 
             using (_context)
             {
@@ -28,7 +25,6 @@ namespace Sofas_Services
                 //datosconsumibles = _context.consumibles.Where(x => x.id == 1).Select(x => x.id).FirstOrDefault();
 
             }
-            // IList<IList<Consumibles>> ret = new List<IList<Consumibles>>();
             return datosconsumibles;
         }
 
@@ -36,8 +32,45 @@ namespace Sofas_Services
         {
             Consumibles consumible = new Consumibles();
             consumible.Producto = "Harina 0000";
+        //    consumible.id = 4;
+           // _context.
+            _context.consumibles.Add(consumible);
             _context.SaveChanges();
         }
+
+        /// <summary>
+        /// recives the consumible to save in the database
+        /// </summary>
+        /// <param name="consumible"></param>
+        /// 
+        public void CargaConsumibles(string _consumible)
+        {
+            Consumibles consumible = new Consumibles();
+
+            consumible.Producto = _consumible;
+            _context.consumibles.Add(consumible);
+            _context.SaveChanges();
+        }
+        public void CargaConsumibles(List<string> _consumibles)
+        {
+            List<Consumibles> consumiblesgrabar = new List<Consumibles>();
+
+            foreach (var item in _consumibles)
+            {
+                Consumibles consumible = new Consumibles();
+                consumible.Producto = item;/*item.ElementAt<1>*/
+
+                consumiblesgrabar.Add(consumible);
+
+            }
+            //metodo para guardar una lista con foreach directo a la BD
+
+
+            _context.SaveChanges();
+        }
+
+
+
     }
 
 }

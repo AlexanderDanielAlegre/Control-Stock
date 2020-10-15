@@ -22,11 +22,11 @@ namespace WebApplication1.Controllers
             db = context;
             services_consumibles = consumiblesServices;
         }
-
-        public ActionResult Index()
+        [HttpGet("[action]")]
+        public void CargarPrueba()
         {
             services_consumibles.CargaPrueba();
-            return View();
+           // return View();
          }
         //[HttpGet("[action]")]
         //public IActionResult Index()
