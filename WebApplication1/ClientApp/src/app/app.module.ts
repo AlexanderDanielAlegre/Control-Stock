@@ -13,6 +13,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ConsumiblesComponent } from './Consumibles/Consumibles.component';
 import { TodoComponent } from './todo/todo.component';
 import { TodoFormComponent } from './todo-form/todo-form.component';
+import { ProveedorComponent } from './proveedor/proveedor.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
     FetchDataComponent,
     ConsumiblesComponent,
     TodoComponent,
-    TodoFormComponent
+    TodoFormComponent,
+    ProveedorComponent
 
   ],
   imports: [

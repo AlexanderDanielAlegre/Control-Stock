@@ -29,5 +29,9 @@ namespace Sofas_Services
                    }).ToList();
             return lst;
         }
+        public void CargaPrueba()
+        {
+           
+        }
     }
 }
