@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModel } from '@angular/forms';
+//import { NgModel } from '@angular/forms';
 //import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 //import { NgbModal, NgbActiveModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { TodoFormComponent } from '../todo-form/todo-form.component';
@@ -11,7 +11,7 @@ import { TodoFormComponent } from '../todo-form/todo-form.component';
 })
 export class TodoComponent implements OnInit {
 
-  constructor(private modalService: NgModel) { }
+  constructor(/*private modalService: NgbModal*/) { }
 
   ngOnInit() {
   }
@@ -23,9 +23,9 @@ export class TodoComponent implements OnInit {
     //  this.handleModalTodoFormClose.bind(this)
     //)    
   }
-  handleModalTodoFormClose() {
-    alert("se ha cerrado el modal");
-  }
+  //handleModalTodoFormClose() {
+  //  alert("se ha cerrado el modal");
+  //}
 }
 
 

@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Sofas.Domain;
 using Sofas_Services;
+using System;
 
 namespace WebApplication1
 {
@@ -45,6 +46,16 @@ namespace WebApplication1
         {
             if (env.IsDevelopment())
             {
+                app.UseSpa(spa =>
+                {
+                    spa.Options.SourcePath = "ClientApp";
+
+                    if (env.IsDevelopment())
+                    {
+                        spa.Options.StartupTimeout = new TimeSpan(0, 0, 80);
+                        spa.UseAngularCliServer(npmScript: "start");
+                    }
+                });
                 app.UseDeveloperExceptionPage();
             }
             else

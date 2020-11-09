@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sofas.Web", "WebApplication1\Sofas.Web.csproj", "{4C3BBC8A-3A12-4A5D-92B3-AD18216E6EEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{4C3BBC8A-3A12-4A5D-92B3-AD18216E6EEE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sofas.Domain", "Sofas.Domain\Sofas.Domain.csproj", "{B5ECF793-EBD6-4713-A1F8-53B494C4B752}"
 EndProject
